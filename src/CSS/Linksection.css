@@ -1,0 +1,5 @@
+@media(max-width:372px){
+    .logo-gap{
+        gap: 0.35rem;
+    }
+}

@@ -1,0 +1,119 @@
+@keyframes running-border {
+    0% {
+        border-color: blue;
+        color: blue;
+      }
+      25% {
+        border-color: red;
+        color: red;
+      }
+      50% {
+        border-color: yellow;
+        color: yellow;
+      }
+      75% {
+        border-color: green;
+        color: green;
+      }
+      100% {
+        border-color: blue;
+        color: blue;
+      }
+  }
+
+  .animated-running-border {
+    animation: running-border 2s linear infinite;
+  }
+
+
+
+
+
+  @keyframes running-text {
+    0% {
+        border-color: red;
+        color: red;
+       
+      }
+      25% {
+        border-color: blue;
+        color: blue;
+      }
+      50% {
+        border-color: green;
+        color: green;
+        
+      }
+      75% {
+        border-color: yellow;
+        color: yellow;
+      }
+      100% {
+       
+        border-color: blue;
+        color: blue;
+      }
+  }
+
+  .animated-running-text {
+    animation: running-text 2s linear infinite;
+  }
+
+
+
+  .custom-shadow {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+
+
+
+
+
+
+.check{
+  width: 166px;
+  height: 55px;
+  /* box-shadow: 16px 14px 20px #000000; */
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.check::before{
+  content: "";
+  background-image: conic-gradient(
+    rgb(134, 209, 238) 20deg,
+      transparent 120deg
+  );
+  width: 353px;
+  height: 204px;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+.check::after{
+  content: "About me";
+ 
+  width: 162px;
+  height: 51px;
+ background: #101010;
+ position: absolute;
+ border-radius: 10px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: rgb(134, 209, 238);
+ font-size: large;
+ letter-spacing: 5px;
+
+}
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+  100%{
+      transform: rotate(-360deg);
+  }
+}

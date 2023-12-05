@@ -1,0 +1,46 @@
+.live{
+    width: 166px;
+    height: 55px;
+    /* box-shadow: 16px 14px 20px #000000; */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .live::before{
+    content: "";
+    background-image: conic-gradient(
+      rgb(134, 209, 238) 20deg,
+        transparent 120deg
+    );
+    width: 353px;
+    height: 204px;
+    position: absolute;
+    animation: live 2s linear infinite;
+  }
+  .live::after{
+    content: "";
+  
+    width: 162px;
+    height: 51px;
+   background: #101010;
+   position: absolute;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: rgb(134, 209, 238);
+   font-size: large;
+   letter-spacing: 5px;
+  
+  }
+  @keyframes live{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+  }

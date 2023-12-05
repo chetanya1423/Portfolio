@@ -1,0 +1,14 @@
+@media(max-width:280px){
+    .name-Head{
+        font-size: 20px;
+    }
+    .nav{
+        margin-top: -20px;
+    }
+    .nav-li{
+        font-size: 18px;
+    }
+    .menu-logo{
+        top: 3.75rem;
+    }
+}

@@ -1,0 +1,55 @@
+.namebtn{
+    color: rgb(134, 209, 238);
+    border: 1px solid rgb(134, 209, 238);
+}
+
+
+
+
+
+.download{
+    width: 240px;
+    height: 55px;
+    /* box-shadow: 16px 14px 20px #000000; */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .download::before{
+    content: "";
+    background-image: conic-gradient(
+      rgb(134, 209, 238) 20deg,
+        transparent 120deg
+    );
+    width: 409px;
+    height: 266px;
+    position: absolute;
+    animation: download 2s linear infinite;
+  }
+  .download::after{
+    content: "Download Resume";
+   
+    width: 235px;
+    height: 51px;
+   background: #101010;
+   position: absolute;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: rgb(134, 209, 238);
+   font-size: large;
+   letter-spacing: 5px;
+  
+  }
+  @keyframes download{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+  }
